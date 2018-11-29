@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		064A20C721AD55CF002C7A70 /* STVTopStoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A20C621AD55CF002C7A70 /* STVTopStoriesModel.swift */; };
+		064A20C921AD5A79002C7A70 /* STVAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A20C821AD5A79002C7A70 /* STVAPIManager.swift */; };
+		064A20CB21AD878B002C7A70 /* STVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A20CA21AD878B002C7A70 /* STVConstants.swift */; };
+		064A20CD21AD8C59002C7A70 /* STVServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A20CC21AD8C59002C7A70 /* STVServiceManager.swift */; };
+		066827FA21AEFBA700DBAE3F /* STVActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066827F921AEFBA700DBAE3F /* STVActivityIndicator.swift */; };
+		0687679321AC3722003314EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687679221AC3722003314EE /* AppDelegate.swift */; };
+		0687679821AC3722003314EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0687679621AC3722003314EE /* Main.storyboard */; };
+		0687679A21AC3724003314EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0687679921AC3724003314EE /* Assets.xcassets */; };
+		0687679D21AC3724003314EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0687679B21AC3724003314EE /* LaunchScreen.storyboard */; };
+		068767A821AC3724003314EE /* STV_NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068767A721AC3724003314EE /* STV_NewsTests.swift */; };
+		068767B321AC3724003314EE /* STV_NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068767B221AC3724003314EE /* STV_NewsUITests.swift */; };
+		068767C121AC455C003314EE /* STVTopStoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068767C021AC455C003314EE /* STVTopStoriesTableViewController.swift */; };
+		068767C421AC45B0003314EE /* STVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068767C221AC45B0003314EE /* STVTableViewCell.swift */; };
+		068767C721AC464D003314EE /* STVStoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068767C621AC464D003314EE /* STVStoryDetailViewController.swift */; };
+		06D2D8C121B0948B000DD36A /* STVNewsLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06D2D8C021B0948B000DD36A /* STVNewsLogo.jpg */; };
+		2B6FC948E5C22ABC3288EF71 /* Pods_STV_NewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591DD408A0C11E96BCF6D078 /* Pods_STV_NewsTests.framework */; };
+		C968FC5BA32B8CD9E6F08789 /* Pods_STV_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFBF19C2C56D7368E0F6695 /* Pods_STV_News.framework */; };
+		FCCB20B7B789DF8DD6DCB298 /* Pods_STV_NewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246B0A703FEAFF3B681733D5 /* Pods_STV_NewsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		068767A421AC3724003314EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0687678721AC3722003314EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0687678E21AC3722003314EE;
+			remoteInfo = "STV News";
+		};
+		068767AF21AC3724003314EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0687678721AC3722003314EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0687678E21AC3722003314EE;
+			remoteInfo = "STV News";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		064A20C621AD55CF002C7A70 /* STVTopStoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVTopStoriesModel.swift; sourceTree = "<group>"; };
+		064A20C821AD5A79002C7A70 /* STVAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVAPIManager.swift; sourceTree = "<group>"; };
+		064A20CA21AD878B002C7A70 /* STVConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVConstants.swift; sourceTree = "<group>"; };
+		064A20CC21AD8C59002C7A70 /* STVServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVServiceManager.swift; sourceTree = "<group>"; };
+		066827F921AEFBA700DBAE3F /* STVActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVActivityIndicator.swift; sourceTree = "<group>"; };
+		0687678F21AC3722003314EE /* STV News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STV News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0687679221AC3722003314EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0687679721AC3722003314EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0687679921AC3724003314EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0687679C21AC3724003314EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0687679E21AC3724003314EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068767A321AC3724003314EE /* STV NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STV NewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		068767A721AC3724003314EE /* STV_NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STV_NewsTests.swift; sourceTree = "<group>"; };
+		068767A921AC3724003314EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068767AE21AC3724003314EE /* STV NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STV NewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		068767B221AC3724003314EE /* STV_NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STV_NewsUITests.swift; sourceTree = "<group>"; };
+		068767B421AC3724003314EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068767C021AC455C003314EE /* STVTopStoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVTopStoriesTableViewController.swift; sourceTree = "<group>"; };
+		068767C221AC45B0003314EE /* STVTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVTableViewCell.swift; sourceTree = "<group>"; };
+		068767C621AC464D003314EE /* STVStoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVStoryDetailViewController.swift; sourceTree = "<group>"; };
+		06D2D8C021B0948B000DD36A /* STVNewsLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = STVNewsLogo.jpg; path = "STV News/Assets.xcassets/STVNewsLogo.imageset/STVNewsLogo.jpg"; sourceTree = SOURCE_ROOT; };
+		184EC5B7177675DCFCCE62CD /* Pods-STV NewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STV NewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STV NewsTests/Pods-STV NewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		246B0A703FEAFF3B681733D5 /* Pods_STV_NewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STV_NewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		591DD408A0C11E96BCF6D078 /* Pods_STV_NewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STV_NewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		617BA2A87E4016C55B6CAA5A /* Pods-STV NewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STV NewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-STV NewsUITests/Pods-STV NewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6CFBF19C2C56D7368E0F6695 /* Pods_STV_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STV_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FE6312719704BDFCA95560 /* Pods-STV NewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STV NewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-STV NewsTests/Pods-STV NewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2660727EE32085894011AB1 /* Pods-STV News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STV News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STV News/Pods-STV News.debug.xcconfig"; sourceTree = "<group>"; };
+		A6739713030BF97FE0713FC1 /* Pods-STV News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STV News.release.xcconfig"; path = "Pods/Target Support Files/Pods-STV News/Pods-STV News.release.xcconfig"; sourceTree = "<group>"; };
+		A70DAB1E990ED533E84E05BF /* Pods-STV NewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STV NewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STV NewsUITests/Pods-STV NewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0687678C21AC3722003314EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C968FC5BA32B8CD9E6F08789 /* Pods_STV_News.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068767A021AC3724003314EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6FC948E5C22ABC3288EF71 /* Pods_STV_NewsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068767AB21AC3724003314EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCB20B7B789DF8DD6DCB298 /* Pods_STV_NewsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0687678621AC3722003314EE = {
+			isa = PBXGroup;
+			children = (
+				0687679121AC3722003314EE /* STV News */,
+				068767A621AC3724003314EE /* STV NewsTests */,
+				068767B121AC3724003314EE /* STV NewsUITests */,
+				0687679021AC3722003314EE /* Products */,
+				5A4DBA16996DADCC04AB04EF /* Pods */,
+				3581383E6396040C6F337042 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0687679021AC3722003314EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0687678F21AC3722003314EE /* STV News.app */,
+				068767A321AC3724003314EE /* STV NewsTests.xctest */,
+				068767AE21AC3724003314EE /* STV NewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0687679121AC3722003314EE /* STV News */ = {
+			isa = PBXGroup;
+			children = (
+				06B33AAC21B03FEC00459B0B /* Application */,
+				0687679621AC3722003314EE /* Main.storyboard */,
+				06B33AA921B027BE00459B0B /* ViewControllers */,
+				06B33AAA21B027CA00459B0B /* Model */,
+				06B33AAB21B027D400459B0B /* APIClient */,
+				06B33AAD21B0400000459B0B /* Resources */,
+				0687679921AC3724003314EE /* Assets.xcassets */,
+				0687679B21AC3724003314EE /* LaunchScreen.storyboard */,
+				0687679E21AC3724003314EE /* Info.plist */,
+			);
+			path = "STV News";
+			sourceTree = "<group>";
+		};
+		068767A621AC3724003314EE /* STV NewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				068767A721AC3724003314EE /* STV_NewsTests.swift */,
+				068767A921AC3724003314EE /* Info.plist */,
+			);
+			path = "STV NewsTests";
+			sourceTree = "<group>";
+		};
+		068767B121AC3724003314EE /* STV NewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				068767B221AC3724003314EE /* STV_NewsUITests.swift */,
+				068767B421AC3724003314EE /* Info.plist */,
+			);
+			path = "STV NewsUITests";
+			sourceTree = "<group>";
+		};
+		06B33AA921B027BE00459B0B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				068767C021AC455C003314EE /* STVTopStoriesTableViewController.swift */,
+				068767C621AC464D003314EE /* STVStoryDetailViewController.swift */,
+				068767C221AC45B0003314EE /* STVTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		06B33AAA21B027CA00459B0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				064A20C621AD55CF002C7A70 /* STVTopStoriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06B33AAB21B027D400459B0B /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				064A20C821AD5A79002C7A70 /* STVAPIManager.swift */,
+				064A20CC21AD8C59002C7A70 /* STVServiceManager.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		06B33AAC21B03FEC00459B0B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0687679221AC3722003314EE /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		06B33AAD21B0400000459B0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06D2D8C021B0948B000DD36A /* STVNewsLogo.jpg */,
+				064A20CA21AD878B002C7A70 /* STVConstants.swift */,
+				066827F921AEFBA700DBAE3F /* STVActivityIndicator.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3581383E6396040C6F337042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBF19C2C56D7368E0F6695 /* Pods_STV_News.framework */,
+				591DD408A0C11E96BCF6D078 /* Pods_STV_NewsTests.framework */,
+				246B0A703FEAFF3B681733D5 /* Pods_STV_NewsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A4DBA16996DADCC04AB04EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2660727EE32085894011AB1 /* Pods-STV News.debug.xcconfig */,
+				A6739713030BF97FE0713FC1 /* Pods-STV News.release.xcconfig */,
+				184EC5B7177675DCFCCE62CD /* Pods-STV NewsTests.debug.xcconfig */,
+				72FE6312719704BDFCA95560 /* Pods-STV NewsTests.release.xcconfig */,
+				A70DAB1E990ED533E84E05BF /* Pods-STV NewsUITests.debug.xcconfig */,
+				617BA2A87E4016C55B6CAA5A /* Pods-STV NewsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0687678E21AC3722003314EE /* STV News */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068767B721AC3724003314EE /* Build configuration list for PBXNativeTarget "STV News" */;
+			buildPhases = (
+				C4BE7141F2B1182C53A00A79 /* [CP] Check Pods Manifest.lock */,
+				0687678B21AC3722003314EE /* Sources */,
+				0687678C21AC3722003314EE /* Frameworks */,
+				0687678D21AC3722003314EE /* Resources */,
+				2B170DAAA2F655DA4446C937 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STV News";
+			productName = "STV News";
+			productReference = 0687678F21AC3722003314EE /* STV News.app */;
+			productType = "com.apple.product-type.application";
+		};
+		068767A221AC3724003314EE /* STV NewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068767BA21AC3724003314EE /* Build configuration list for PBXNativeTarget "STV NewsTests" */;
+			buildPhases = (
+				996103E9A0FD7FB60507BA9E /* [CP] Check Pods Manifest.lock */,
+				0687679F21AC3724003314EE /* Sources */,
+				068767A021AC3724003314EE /* Frameworks */,
+				068767A121AC3724003314EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				068767A521AC3724003314EE /* PBXTargetDependency */,
+			);
+			name = "STV NewsTests";
+			productName = "STV NewsTests";
+			productReference = 068767A321AC3724003314EE /* STV NewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		068767AD21AC3724003314EE /* STV NewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068767BD21AC3724003314EE /* Build configuration list for PBXNativeTarget "STV NewsUITests" */;
+			buildPhases = (
+				B507CC6811CE176B2D7F5A85 /* [CP] Check Pods Manifest.lock */,
+				068767AA21AC3724003314EE /* Sources */,
+				068767AB21AC3724003314EE /* Frameworks */,
+				068767AC21AC3724003314EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				068767B021AC3724003314EE /* PBXTargetDependency */,
+			);
+			name = "STV NewsUITests";
+			productName = "STV NewsUITests";
+			productReference = 068767AE21AC3724003314EE /* STV NewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0687678721AC3722003314EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Pooja;
+				TargetAttributes = {
+					0687678E21AC3722003314EE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					068767A221AC3724003314EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0687678E21AC3722003314EE;
+					};
+					068767AD21AC3724003314EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0687678E21AC3722003314EE;
+					};
+				};
+			};
+			buildConfigurationList = 0687678A21AC3722003314EE /* Build configuration list for PBXProject "STV News" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0687678621AC3722003314EE;
+			productRefGroup = 0687679021AC3722003314EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0687678E21AC3722003314EE /* STV News */,
+				068767A221AC3724003314EE /* STV NewsTests */,
+				068767AD21AC3724003314EE /* STV NewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0687678D21AC3722003314EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0687679D21AC3724003314EE /* LaunchScreen.storyboard in Resources */,
+				06D2D8C121B0948B000DD36A /* STVNewsLogo.jpg in Resources */,
+				0687679A21AC3724003314EE /* Assets.xcassets in Resources */,
+				0687679821AC3722003314EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068767A121AC3724003314EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068767AC21AC3724003314EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B170DAAA2F655DA4446C937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-STV News/Pods-STV News-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STV News/Pods-STV News-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996103E9A0FD7FB60507BA9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STV NewsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B507CC6811CE176B2D7F5A85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STV NewsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4BE7141F2B1182C53A00A79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STV News-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0687678B21AC3722003314EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068767C121AC455C003314EE /* STVTopStoriesTableViewController.swift in Sources */,
+				064A20CB21AD878B002C7A70 /* STVConstants.swift in Sources */,
+				064A20C721AD55CF002C7A70 /* STVTopStoriesModel.swift in Sources */,
+				064A20CD21AD8C59002C7A70 /* STVServiceManager.swift in Sources */,
+				068767C721AC464D003314EE /* STVStoryDetailViewController.swift in Sources */,
+				068767C421AC45B0003314EE /* STVTableViewCell.swift in Sources */,
+				064A20C921AD5A79002C7A70 /* STVAPIManager.swift in Sources */,
+				0687679321AC3722003314EE /* AppDelegate.swift in Sources */,
+				066827FA21AEFBA700DBAE3F /* STVActivityIndicator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0687679F21AC3724003314EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068767A821AC3724003314EE /* STV_NewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068767AA21AC3724003314EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068767B321AC3724003314EE /* STV_NewsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		068767A521AC3724003314EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0687678E21AC3722003314EE /* STV News */;
+			targetProxy = 068767A421AC3724003314EE /* PBXContainerItemProxy */;
+		};
+		068767B021AC3724003314EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0687678E21AC3722003314EE /* STV News */;
+			targetProxy = 068767AF21AC3724003314EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0687679621AC3722003314EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0687679721AC3722003314EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0687679B21AC3724003314EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0687679C21AC3724003314EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		068767B521AC3724003314EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		068767B621AC3724003314EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		068767B821AC3724003314EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2660727EE32085894011AB1 /* Pods-STV News.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP5CJ9K53P;
+				INFOPLIST_FILE = "STV News/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.STV-News";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		068767B921AC3724003314EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6739713030BF97FE0713FC1 /* Pods-STV News.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP5CJ9K53P;
+				INFOPLIST_FILE = "STV News/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.STV-News";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		068767BB21AC3724003314EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 184EC5B7177675DCFCCE62CD /* Pods-STV NewsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP5CJ9K53P;
+				INFOPLIST_FILE = "STV NewsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.STV-NewsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STV News.app/STV News";
+			};
+			name = Debug;
+		};
+		068767BC21AC3724003314EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72FE6312719704BDFCA95560 /* Pods-STV NewsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP5CJ9K53P;
+				INFOPLIST_FILE = "STV NewsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.STV-NewsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STV News.app/STV News";
+			};
+			name = Release;
+		};
+		068767BE21AC3724003314EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A70DAB1E990ED533E84E05BF /* Pods-STV NewsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP5CJ9K53P;
+				INFOPLIST_FILE = "STV NewsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.STV-NewsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "STV News";
+			};
+			name = Debug;
+		};
+		068767BF21AC3724003314EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617BA2A87E4016C55B6CAA5A /* Pods-STV NewsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP5CJ9K53P;
+				INFOPLIST_FILE = "STV NewsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.STV-NewsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "STV News";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0687678A21AC3722003314EE /* Build configuration list for PBXProject "STV News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068767B521AC3724003314EE /* Debug */,
+				068767B621AC3724003314EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		068767B721AC3724003314EE /* Build configuration list for PBXNativeTarget "STV News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068767B821AC3724003314EE /* Debug */,
+				068767B921AC3724003314EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		068767BA21AC3724003314EE /* Build configuration list for PBXNativeTarget "STV NewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068767BB21AC3724003314EE /* Debug */,
+				068767BC21AC3724003314EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		068767BD21AC3724003314EE /* Build configuration list for PBXNativeTarget "STV NewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068767BE21AC3724003314EE /* Debug */,
+				068767BF21AC3724003314EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0687678721AC3722003314EE /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_STV_NewsTests {
+  umbrella header "Pods-STV NewsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
